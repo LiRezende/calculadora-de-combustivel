@@ -2,8 +2,7 @@
   <div class="input-gas">
     <h2>Calculadora de Combustível</h2>
     <h3>
-      Insira os valores do Etanol e Gasolina, para calcular qual é mais
-      vantajoso.
+      Insira os valores do Etanol e Gasolina, para calcular qual é mais vantajoso.
     </h3>
     <form>
       <v-text-field
@@ -15,18 +14,18 @@
         label="Valor da Gasolina"
       ></v-text-field>
     </form>
-    <v-dialog v-model="dialog" width="300">
+    <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on, attrs }">
         <v-btn v-bind="attrs" v-on="on" @click="calcDifer"> calcular </v-btn>
       </template>
 
       <v-card>
-        <v-card-title>
-          <h3>A diferença é: {{ diference }}</h3>
+        <v-card-title color="#000">
+          <h3>A diferença é: {{ (diference).toFixed(2) }}</h3>
         </v-card-title>
         <v-card-text>
-          <p v-if="diferenca > 0.7">Abasteça com GASOLINA!</p>
-          <p v-else-if="diferenca < 0.7">Abasteça com ÁLCOOL / ETANOL!</p>
+          <p v-if="diference > 0.7">Abasteça com GASOLINA!</p>
+          <p v-else-if="diference < 0.7">Abasteça com ÁLCOOL / ETANOL!</p>
           <p v-else>Tanto faz, a escolha é sua.</p>
         </v-card-text>
         <v-card-actions>
@@ -50,8 +49,8 @@
 export default {
   data() {
     return {
-      diference: "",
-      dialog: false,
+        diference: 0,
+        dialog: false,
     };
   },
   methods: {
