@@ -11,13 +11,8 @@ import InputGas from './components/InputGas';
 
 export default {
   name: 'App',
-
   components: {
     InputGas,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
