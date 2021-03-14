@@ -4,32 +4,37 @@
     <h3>Insira os valores do Etanol e Gasolina, para calcular qual é mais vantajoso.</h3>
     <form>
         <v-text-field
-            label="Valor do Etanol"
-            outlined
+          v-model="valueAlcohol"
+          :error-messages="errors"
+          label="Valor do Alcool"
+          required
         ></v-text-field>
         <v-text-field
-            label="Valor da Gasolina"
-            outlined
+          v-model="valueGas"
+          :error-messages="errors"
+          label="Valor da Gasolina"
+          required
         ></v-text-field>
-         <v-btn
-            class="mr-4"
-            type="submit"
-            :disabled="invalid"
-        >
-            enviar
-        </v-btn>
-        <v-btn @click="clear">
-            limpar
-        </v-btn>
     </form>
+    <button @click="calcularDifer">Calcular</button>
+    <p>{{ diferenca }}</p>
 </div>
 
 </template>
 
 <script>
 export default {
-    
-}
+    data () {
+        return {
+            diferenca: 0
+        }
+    },
+    methods: {
+      calcularDifer () { 
+          this.diferenca = this.valueGas / this.valueAlcohol;
+      }
+    },
+}    
 </script>
 
 <style scoped>
