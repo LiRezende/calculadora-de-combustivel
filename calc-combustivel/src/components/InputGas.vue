@@ -16,7 +16,12 @@
           required
         ></v-text-field>
     </form>
-    <button @click="calcularDifer">Calcular</button>
+    <v-btn
+        class="mr-4"
+        @click="calcularDifer"
+    >
+        calcular
+    </v-btn>
     <p>{{ diferenca }}</p>
 </div>
 
@@ -26,23 +31,23 @@
 export default {
     data () {
         return {
-            diferenca: 0
+            diferenca: ''
         }
     },
     methods: {
       calcularDifer () { 
-          this.diferenca = this.valueGas / this.valueAlcohol;
+          this.diferenca = this.valueGas / this.valueAlcohol
       }
     },
 }    
 </script>
 
 <style scoped>
+    div {
+        margin-top: 30px;
+    }
     h2, h3 {
         font-weight: 300;
-    }
-    h2 {
-        margin-top: 20px;
     }
     .input-gas {
         display: flex;
