@@ -37,7 +37,7 @@
     <v-footer class="transparent">
       <v-col class="text-center" cols="12">
         <a href="https://github.com/LiRezende">
-          {{ new Date().getFullYear() }} © Desenvolvido por Ligia Rezende
+          {{ new Date().getFullYear() }} © Desenvolvido por Ligia Brusamolin de Rezende
           <v-icon color="#26A69A">mdi-github</v-icon>
         </a>
       </v-col>
