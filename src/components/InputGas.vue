@@ -40,7 +40,7 @@
           {{ new Date().getFullYear() }} © Desenvolvido por Ligia Brusamolin de Rezende
           <v-icon color="#26A69A">mdi-github</v-icon>
         </a>
-        <a href="https://github.com/LiRezende">
+        <a href="https://www.linkedin.com/in/ligia-brusamolin-1617b866/">
           <v-icon color="#26A69A">mdi-linkedin</v-icon>
         </a>
       </v-col>
