@@ -6,6 +6,12 @@ Este projeto é uma calculadora de combustível desenvolvida em Vue e Vuetify. A
 usuário inserir os valores do Etanal e Gasolina, calcula a diferença entres os combustíveis
 e retorna ao usuário a diferença e qual combustível é mais vantajoso para abastecer o veículo.
 
+Você pode tester a calculadora em: https://calculadoradecombustivel.netlify.app/
+
+![screenshot da calculadora de combustível](https://github.com/LiRezende/calculadora-de-combustivel/blob/main/assets/calculadora-de-combustivel-calculo.jpg)
+
+![screenshot do resultado do cálculo](https://github.com/LiRezende/calculadora-de-combustivel/blob/main/assets/calculadora-de-combustivel-resultado.jpg)
+
 ## Project setup
 ```
 npm install
