@@ -1,11 +1,24 @@
-# calculadora-de-combustivel
-## Calculadora da Diferença entre Etanol e Gasolina
-### Informa ao usuário qual combustível é mais vantajoso para abastecer
+# calc-combustivel
 
-Este projeto é uma calculadora simples e prática, feita em Vue e Vuetify, que calcula a diferença entre os preços do Etanol e Gasolina e informa ao usuário qual combustível é mais vantajoso para abastecer.
-No momento, a tela e formulário estão prontos.
+## Project setup
+```
+npm install
+```
 
-![screenshot da tela do cálculo da calculadora](https://github.com/LiRezende/calculadora-de-combustivel/blob/main/calculadora-de-combustivel-calculo.jpg)
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-![screenshot da tela de resultado da calculadora](https://github.com/LiRezende/calculadora-de-combustivel/blob/main/calculadora-de-combustivel-resultado.jpg)
+### Compiles and minifies for production
+```
+npm run build
+```
 
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style scoped>
-div, footer {
+div {
   margin-top: 30px;
 }
 h3 {
@@ -81,7 +81,7 @@ a {
   align-items: center;
   text-align: center;
 }
-form {
+form, footer {
   padding-top: 20px;
 }
 </style>
