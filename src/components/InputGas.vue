@@ -21,12 +21,12 @@
 
       <v-card>
         <v-card-title color="#000">
-          <h3>A diferença é: {{ (diference).toFixed(2) }}</h3>
+          <h3>A diferença é {{ (diference).toFixed(2) }}</h3>
         </v-card-title>
         <v-card-text>
           <p v-if="diference > 0.7">Abasteça com GASOLINA!</p>
           <p v-else-if="diference < 0.7">Abasteça com ÁLCOOL / ETANOL!</p>
-          <p v-else>Tanto faz, a escolha é sua.</p>
+          <p v-else>Nesse caso, não faz diferença. A escolha é sua!</p>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -39,6 +39,9 @@
         <a href="https://github.com/LiRezende">
           {{ new Date().getFullYear() }} © Desenvolvido por Ligia Brusamolin de Rezende
           <v-icon color="#26A69A">mdi-github</v-icon>
+        </a>
+        <a href="https://github.com/LiRezende">
+          <v-icon color="#26A69A">mdi-linkedin</v-icon>
         </a>
       </v-col>
     </v-footer>
@@ -70,6 +73,7 @@ h3 {
 }
 p {
   font-size: 18px;
+  text-align: center;
 }
 a {
   color:#26A69A!important;
